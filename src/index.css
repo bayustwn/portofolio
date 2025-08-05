@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme{
+    --color-dark-gray: #0a0a0a;
+    --color-light-gray: #7b7875;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/src/assets/fonts/Geist-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/src/assets/fonts/Geist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/src/assets/fonts/Geist-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+body {
+  font-family: 'Geist', sans-serif;
+  background-color: black;
+}
