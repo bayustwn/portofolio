@@ -3,6 +3,7 @@
 @theme{
     --color-dark-gray: #0a0a0a;
     --color-light-gray: #7b7875;
+    --color-light-blue: #86BBD7;  
 }
 
 @font-face {
@@ -26,4 +27,43 @@
 body {
   font-family: 'Geist', sans-serif;
   background-color: black;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+html {
+  scrollbar-width: thin; 
+  scrollbar-color: rgba(255, 255, 255, 0.1) transparent;  
+}
+
+html:not(:hover)::-webkit-scrollbar-thumb {
+  opacity: 0;
+}
+
+html:hover::-webkit-scrollbar-thumb,
+html:active::-webkit-scrollbar-thumb {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
