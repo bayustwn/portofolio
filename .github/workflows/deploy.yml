@@ -32,13 +32,22 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
+          platforms: linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
   deploy:
     needs: build-and-push
@@ -74,4 +83,4 @@ jobs:
               export DOCKER_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
               docker compose pull
               docker compose up -d
-              sudo tailscale funnel 8080 on
+              sudo tailscale funnel 8080
