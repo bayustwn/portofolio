@@ -74,3 +74,4 @@ jobs:
               export DOCKER_IMAGE=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
               docker compose pull
               docker compose up -d
+              sudo tailscale funnel 8080 on
