@@ -23,7 +23,7 @@ const About = () => {
                     </h1>
                     <p className="mt-5 md:text-lg text-justify">
                         <span className="text-white">Hello i'm Bayu Setiawan,</span> a
-                        6th-semester Computer Science student at Universitas Pembangunan
+                        8th-semester Computer Science student at Universitas Pembangunan
                         Nasional "Veteran" Jawa Timur. Passionate about Android Developer, I
                         actively engage in projects to enhance my skills. I participated in
                         the <span className="text-white">Bangkit Academy</span> Independent

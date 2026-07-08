@@ -1,13 +1,17 @@
 export default function Navbar() {
     return(
-        <div className="flex z-10 flex-row gap-5">
+        <div className="flex z-10 flex-row flex-wrap justify-center gap-x-5 gap-y-2 text-sm md:text-base">
             {Array.from([{
                 "name" : "Contact",
-                "destination" : "#"
+                "destination" : "#contact"
             },
             {
                 "name" : "About",
                 "destination" : "#about"
+            }
+            ,{
+                "name" : "Experience",
+                "destination" : "#experience"
             }
             ,{
                 "name" : "Project",

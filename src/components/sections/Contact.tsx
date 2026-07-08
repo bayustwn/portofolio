@@ -2,7 +2,7 @@ import { socials } from "../../data/portfolioData";
 
 const Contact = () => {
     return (
-        <section className="flex items-center w-full md:w-fit mt-10 flex-col gap-3">
+        <section id="contact" className="flex items-center w-full md:w-fit mt-10 flex-col gap-3">
             <h1 className="font-semibold text-3xl">Contact</h1>
             <div className="relative flex flex-row border border-light-gray/40 p-3 bg-light-gray/8 gap-5">
                 <div

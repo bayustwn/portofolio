@@ -2,6 +2,7 @@ import Navbar from "./components/ui/navbar";
 import ImageModal from "./components/modals/ImageModal";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
 import Skills from "./components/sections/Skills";
 import Certification from "./components/sections/Certification";
 import Projects from "./components/sections/Projects";
@@ -46,6 +47,7 @@ function App() {
       />
       <Hero />
       <About />
+      <Experience />
       <section className="grid grid-cols-1 md:grid-cols-[2fr_6fr] w-full md:justify-between mt-5 gap-5">
         <Skills />
         <Certification handleImageClick={handleImageClick} />
