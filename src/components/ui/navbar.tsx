@@ -10,8 +10,16 @@ export default function Navbar() {
                 "destination" : "#about"
             }
             ,{
+                "name" : "Skills",
+                "destination" : "#skills"
+            }
+            ,{
                 "name" : "Experience",
                 "destination" : "#experience"
+            }
+            ,{
+                "name" : "Certification",
+                "destination" : "#certification"
             }
             ,{
                 "name" : "Project",

@@ -7,7 +7,7 @@ interface CertificationProps {
 
 const Certification = ({ handleImageClick }: CertificationProps) => {
     return (
-        <div className="border border-light-gray/40 h-fit p-5 rounded-lg">
+        <div id="certification" className="border border-light-gray/40 h-fit p-5 rounded-lg">
             <ActionBar />
             <h1 className="text-light-gray mt-5">
                 ~$ Bayu Setiawan/ <span className="text-light-blue">Certification</span>

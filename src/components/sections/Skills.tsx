@@ -3,7 +3,7 @@ import { skills } from "../../data/portfolioData";
 
 const Skills = () => {
     return (
-        <div className="relative border border-light-gray/40 md:h-full h-fit flex-1 p-5 rounded-lg">
+        <div id="skills" className="relative border border-light-gray/40 md:h-full h-fit flex-1 p-5 rounded-lg">
             <div
                 className="absolute inset-0 z-0"
                 style={{
