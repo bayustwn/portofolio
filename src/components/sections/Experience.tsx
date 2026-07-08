@@ -11,37 +11,39 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="relative mt-5 w-full overflow-hidden rounded-lg border border-light-gray/40 p-5 md:p-6"
+            className="relative mt-5 w-full rounded-lg border border-light-gray/40 p-5 md:p-6"
         >
-            <div
-                className="absolute inset-0 z-0"
-                style={{
-                    backgroundImage: `
-                        linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
-                    `,
-                    backgroundSize: "52px 52px",
-                }}
-            />
-            <div
-                className="absolute -right-28 top-10 h-72 w-72 rounded-full blur-3xl"
-                style={{ background: "rgba(134, 187, 215, 0.14)" }}
-            />
-            <div
-                className="absolute -bottom-32 left-1/4 h-64 w-64 rounded-full blur-3xl"
-                style={{ background: "rgba(255, 255, 255, 0.06)" }}
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        backgroundImage: `
+                            linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
+                        `,
+                        backgroundSize: "52px 52px",
+                    }}
+                />
+                <div
+                    className="absolute -right-28 top-10 h-72 w-72 rounded-full blur-3xl"
+                    style={{ background: "rgba(134, 187, 215, 0.14)" }}
+                />
+                <div
+                    className="absolute -bottom-32 left-1/4 h-64 w-64 rounded-full blur-3xl"
+                    style={{ background: "rgba(255, 255, 255, 0.06)" }}
+                />
+            </div>
+            <img
+                src="/icons/plus.svg"
+                alt=""
+                aria-hidden="true"
+                className="absolute -left-3 -top-3 z-20 w-6"
             />
             <img
                 src="/icons/plus.svg"
                 alt=""
                 aria-hidden="true"
-                className="absolute -left-3 -top-3 w-6"
-            />
-            <img
-                src="/icons/plus.svg"
-                alt=""
-                aria-hidden="true"
-                className="absolute -bottom-3 -right-3 w-6"
+                className="absolute -bottom-3 -right-3 z-20 w-6"
             />
 
             <div className="relative z-10">

@@ -22,16 +22,16 @@ const About = () => {
                         ~$ Bayu Setiawan/ <span className="text-light-blue">About</span>
                     </h1>
                     <p className="mt-5 md:text-lg text-justify">
-                        <span className="text-white">Hello i'm Bayu Setiawan,</span> a
+                        <span className="text-white">Hello, I'm Bayu Setiawan,</span> an
                         8th-semester Computer Science student at Universitas Pembangunan
-                        Nasional "Veteran" Jawa Timur. Passionate about Android Developer, I
-                        actively engage in projects to enhance my skills. I participated in
-                        the <span className="text-white">Bangkit Academy</span> Independent
-                        Study Program, where I gained valuable experience in{" "}
-                        <span className="text-white">Android development.</span>{" "}
-                        Additionally, I joined the Mobile Development Community at my
-                        university, where I contributed to various front-end and full-stack
-                        development projects while mentoring fellow students.
+                        Nasional "Veteran" Jawa Timur. I focus on{" "}
+                        <span className="text-white">Android and full-stack web development</span>,
+                        building practical applications with clean interfaces, reliable APIs,
+                        and user-focused flows. Through{" "}
+                        <span className="text-white">Bangkit Academy</span>, internships, and
+                        the Mobile Developer Community, I've grown by shipping real projects,
+                        collaborating with teams, and mentoring fellow students in mobile
+                        development.
                     </p>
                 </div>
             </div>
