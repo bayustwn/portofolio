@@ -42,7 +42,7 @@ const Hero = () => {
                 <p className="text-light-gray md:text-md text-sm">
                     ~$ fullstack developer
                 </p>
-                <img src="/images/me.png" fetchPriority="high" alt="Bayu Setiawan" className="w-80 md:w-100 mt-14" />
+                <img src="/images/me.png" alt="Bayu Setiawan" className="w-80 md:w-100 mt-14" />
             </div>
         </section>
     );
