@@ -55,7 +55,7 @@ function App() {
       <Projects handlePreviewClick={handlePreviewClick} />
       <Contact />
       <section className="w-full mt-10 text-center text-light-gray">
-        <p>© 2025 Bayu Setiawan.</p>
+        <p>© {new Date().getFullYear()} Bayu Setiawan.</p>
       </section>
       <ImageModal
         isOpen={isModalOpen}
