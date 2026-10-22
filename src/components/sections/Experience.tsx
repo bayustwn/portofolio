@@ -1,13 +1,6 @@
 import { experiences } from "../../data/portfolioData";
 import ActionBar from "../ui/actionBar";
 
-const typeLabels: Record<string, string> = {
-    project: "Project-based",
-    internship: "Internship",
-    program: "Learning Program",
-    community: "Community",
-};
-
 const Experience = () => {
     const sortedExperiences = [...experiences].sort((a, b) => {
         const startDateDiff = Date.parse(b.startDate) - Date.parse(a.startDate);
@@ -61,7 +54,7 @@ const Experience = () => {
                             ~$ Bayu Setiawan/ <span className="text-light-blue">Experience</span>
                         </p>
                         <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight text-white md:text-4xl">
-                            Hands-on experience building Android apps, web tools, and mentoring developers.
+                            Hands-on experience building Android apps, full-stack web apps, and mentoring developers.
                         </h2>
                         <p className="mt-4 max-w-xl text-sm leading-6 text-light-gray md:text-base">
                             I combine technical execution with clear communication, from shipping
@@ -70,7 +63,7 @@ const Experience = () => {
                         <div className="mt-5 flex flex-wrap gap-2">
                             {[
                                 "Mobile Apps",
-                                "Web Tools",
+                                "Full-Stack Web Dev",
                                 "API Integration",
                                 "Developer Mentoring",
                             ].map((label) => (
@@ -103,9 +96,14 @@ const Experience = () => {
                                                     {experience.role}
                                                 </h3>
                                             </div>
-                                            {typeLabels[experience.type] && (
+                                            {experience.type === "project" && (
                                                 <span className="w-fit rounded-full border border-light-blue/40 bg-light-blue/10 px-3 py-1 text-xs text-light-blue">
-                                                    {typeLabels[experience.type]}
+                                                    Project-based
+                                                </span>
+                                            )}
+                                            {experience.type !== "project" && (
+                                                <span className="w-fit rounded-full border border-light-gray/30 bg-light-gray/8 px-3 py-1 text-xs text-light-gray">
+                                                    {experience.period}
                                                 </span>
                                             )}
                                         </div>
