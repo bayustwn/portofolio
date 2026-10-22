@@ -181,7 +181,7 @@ export const projects = [
         title: "Ifishy",
         description: "A mobile app integrated with AI to predict fish diseases.",
         link: {
-            github: "https://github.com/SandyAryadika/Ifishy-C242-PS164",
+            github: "https://github.com/bayustwn/Ifishy-C242-PS164",
         },
         preview: {
             figma: "https://www.figma.com/design/qwZgiefJnmTZntrgBwM6yT/Bangkit-2024?node-id=5-5&t=4weAjAmaXEksbe4Q-1",
