@@ -17,6 +17,7 @@ export interface Project {
 export interface Experience {
     role: string;
     organization: string;
+    type: "project" | "contract" | "internship" | "program" | "community";
     period: string;
     startDate: string;
     endDate: string;
@@ -62,6 +63,7 @@ export const experiences: Experience[] = [
     {
         role: "Full-Stack Web Developer",
         organization: "PT Mentari Okka Sukses Utama",
+        type: "project",
         period: "Oct 2025 - Feb 2026",
         startDate: "2025-10-01",
         endDate: "2026-02-28",
@@ -77,6 +79,7 @@ export const experiences: Experience[] = [
     {
         role: "Web Developer Intern",
         organization: "Digital Hero",
+        type: "internship",
         period: "Sep 2025 - Dec 2025",
         startDate: "2025-09-15",
         endDate: "2025-12-15",
@@ -92,6 +95,7 @@ export const experiences: Experience[] = [
     {
         role: "Video Editor",
         organization: "PT. Bizhub Digital Indonesia",
+        type: "contract",
         period: "Dec 2024 - Aug 2025",
         startDate: "2024-12-01",
         endDate: "2025-08-31",
@@ -107,6 +111,7 @@ export const experiences: Experience[] = [
     {
         role: "Independent Study - Android Learning Path",
         organization: "Bangkit Academy",
+        type: "program",
         period: "Sep 2024 - Dec 2024",
         startDate: "2024-09-01",
         endDate: "2024-12-31",
@@ -122,6 +127,7 @@ export const experiences: Experience[] = [
     {
         role: "Video Editor",
         organization: "Tribelio Creative",
+        type: "contract",
         period: "Aug 2024 - Nov 2024",
         startDate: "2024-08-01",
         endDate: "2024-11-30",
@@ -137,6 +143,7 @@ export const experiences: Experience[] = [
     {
         role: "Android & Web Developer",
         organization: "PT. Hisar Global Indonesia",
+        type: "project",
         period: "Aug 2023 - Dec 2024",
         startDate: "2023-08-01",
         endDate: "2024-12-31",
@@ -152,6 +159,7 @@ export const experiences: Experience[] = [
     {
         role: "Lead & Mentor",
         organization: "Mobile Developer Community",
+        type: "community",
         period: "Jul 2023 - Jul 2024",
         startDate: "2023-07-01",
         endDate: "2024-07-31",

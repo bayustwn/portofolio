@@ -1,6 +1,13 @@
 import { experiences } from "../../data/portfolioData";
 import ActionBar from "../ui/actionBar";
 
+const typeLabels: Record<string, string> = {
+    project: "Project-based",
+    internship: "Internship",
+    program: "Learning Program",
+    community: "Community",
+};
+
 const Experience = () => {
     const sortedExperiences = [...experiences].sort((a, b) => {
         const startDateDiff = Date.parse(b.startDate) - Date.parse(a.startDate);
@@ -96,9 +103,11 @@ const Experience = () => {
                                                     {experience.role}
                                                 </h3>
                                             </div>
-                                            <span className="w-fit rounded-full border border-light-gray/30 bg-light-gray/8 px-3 py-1 text-xs text-light-gray">
-                                                {experience.period}
-                                            </span>
+                                            {typeLabels[experience.type] && (
+                                                <span className="w-fit rounded-full border border-light-blue/40 bg-light-blue/10 px-3 py-1 text-xs text-light-blue">
+                                                    {typeLabels[experience.type]}
+                                                </span>
+                                            )}
                                         </div>
 
                                         <p className="mt-3 text-sm leading-6 text-light-gray md:text-base">
